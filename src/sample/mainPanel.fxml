@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Canvas fx:id="canvas" height="327.0" width="600.0" />
+      <Label layoutX="14.0" layoutY="338.0" text="Ilość punktów" />
+      <Label fx:id="results" layoutX="307.0" layoutY="338.0" prefHeight="21.0" prefWidth="169.0" text="Wynik całki: " />
+      <TextField fx:id="numDots" layoutX="113.0" layoutY="333.0" prefHeight="12.0" prefWidth="187.0" />
+      <ProgressBar fx:id="progressBar" layoutX="8.0" layoutY="364.0" prefHeight="23.0" prefWidth="442.0" progress="0.0" />
+      <Button fx:id="startButton" layoutX="484.0" layoutY="349.0" mnemonicParsing="false" onAction="#handleStart" text="Start" />
+      <Button fx:id="stopButton" layoutX="535.0" layoutY="349.0" mnemonicParsing="false" onAction="#handleStop" text="Stop" />
+   </children>
+</AnchorPane>
